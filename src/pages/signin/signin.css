@@ -1,0 +1,92 @@
+.signInContainer {
+  min-height: 100vh;
+  background-image: url("../../assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 12% 0 12%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testCoachLogo {
+  position: absolute;
+  top: 4rem;
+  left: 10%;
+}
+.sectionLeft {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7rem;
+  /* background-color: aqua; */
+}
+.line1 {
+  font-weight: 400;
+  font-size: 200%;
+  margin-bottom: 2rem;
+}
+.boldify {
+  font-size: 800;
+}
+.sectionRight {
+  width: 55%;
+  height: 100%;
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signInForm {
+  max-width: 482px;
+  max-height: 600px;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 60px 86px 60px 86px;
+  border-radius: 6px;
+}
+.signinFormHeading {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .signInContainer {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .signInContainer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  .sectionLeft,
+  .sectionRight {
+    width: 100%;
+  }
+  .sectionLeft {
+    margin-top: 8rem;
+    margin-right: 6rem;
+  }
+  .line1 {
+    font-size: 120%;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .signInForm {
+    padding: 20px 10px 10px 20px;
+  }
+} ;
